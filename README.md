@@ -85,6 +85,7 @@ See `/lean4:doctor migrate` for detailed migration help.
 - [Lean4 Compiler Pipeline](plugins/lean4/skills/lean4-compiler-pipeline/SKILL.md) - LCNF/IR traces, compiler options, `cpass` installer workflow
 - [Lean4 FFI Interop](plugins/lean4/skills/lean4-ffi-interop/SKILL.md) - `extern`/`export` + Lake linking + reverse FFI init flow
 - [Lean4 Init Runtime](plugins/lean4/skills/lean4-init-runtime/SKILL.md) - `initialize`/`[init]`/builtin init sequencing and runtime host setup
+- [Lean4 Simp + Simprocs](plugins/lean4/skills/lean4-simp-simprocs/SKILL.md) - `simp` hygiene, `simproc`/`dsimproc` authoring, and normalization-vs-closure triage
 - [Lean4 Specialization](plugins/lean4/skills/lean4-specialization/SKILL.md) - `@[specialize]`/`@[nospecialize]` decision workflow, traces, and recursion-limit tuning
 - [Lean4 Symbol Linkage](plugins/lean4/skills/lean4-symbol-linkage/SKILL.md) - Name mangling, package prefixes, `_init_` symbols, and export override diagnostics
 - [Zulip Extract](plugins/lean4/skills/zulip-extract/SKILL.md) - Convert Zulip HTML exports to readable plain text
@@ -103,6 +104,7 @@ See `/lean4:doctor migrate` for detailed migration help.
 - Added `lean4-specialization` skill for `@[specialize]`/`@[nospecialize]` tuning, trace-driven triage, and `compiler.maxRecSpecialize` control
 - Added `lean4-borrowed-params` skill for `@&` borrowed-parameter ABI/ownership debugging across extern/export boundaries
 - Added `lean4-symbol-linkage` skill for name-mangling/export/init-symbol diagnostics in compiler and FFI linking workflows
+- Added `lean4-simp-simprocs` skill plus expanded `simp` and simproc references, grounded in the Lean community blog series on `simp` and simprocs
 
 **v4.1.0** (February 2026)
 - New [`/lean4:learn`](plugins/lean4/commands/learn.md) command: interactive teaching, mathlib exploration, autoformalization
